@@ -9,9 +9,9 @@ public class Circle{
         this.radius = r;
         this.color = "red";
     }
-    public Circle(double r, String Color){
+    public Circle(double r, String newColor){
         this.radius = r;
-        this.color = Color;
+        this.color = newColor;
     }
     public double getRadius(){
         return radius;
@@ -34,13 +34,5 @@ public class Circle{
     public static void main(String[] args){
         Circle c1= new Circle();
         System.out.println(c1);
-        System.out.println("Area of circle 1="+c1.getArea());
-        Circle c2= new Circle(5.0);
-        System.out.println(c2);
-        System.out.println("Area of circle 2="+c2.getArea());
-        Circle c3= new Circle(7.0, "green");
-        System.out.println(c3);
-        System.out.println("Area of circle 3="+c3.getArea());
     }
 }
-
